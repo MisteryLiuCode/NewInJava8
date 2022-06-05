@@ -23,8 +23,8 @@ public class MyTest {
         };
 //        我这里只是重写了run方法，并没有实现runnable接口，也没有调用start方法，不是多线程
         runnable.run();
-        System.out.println("======使用lamdba表达式调用=====");
-        Runnable runnable1 = () -> System.out.println("使用lamdba表达式输出");
+        System.out.println("======使用lambda表达式调用=====");
+        Runnable runnable1 = () -> System.out.println("使用lambda表达式输出");
         runnable1.run();
     }
 
@@ -108,7 +108,7 @@ public class MyTest {
     }
 
 
-    //    语法格式六，当Lamdba体只有一条执行语句，return与大括号若有，都可以省略
+    //    语法格式六，当lambda体只有一条执行语句，return与大括号若有，都可以省略
     @Test
     public void test6() {
         Comparator<Integer> comparator = new Comparator<Integer>() {
